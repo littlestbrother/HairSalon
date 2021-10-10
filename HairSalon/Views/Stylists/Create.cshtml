@@ -8,10 +8,8 @@
 @using (Html.BeginForm())
 {
   <label for=name>Name: </label>
-  <div required>
   @* @Html.TextBoxFor(model => model.Name) this is actual garbage microsoft wth*@ 
   <input id="Name" name="Name" type="text" required>
-  </div>
   <br>
   <input type="submit" value="Add new Stylist" class="btn btn-primary"/>
 }

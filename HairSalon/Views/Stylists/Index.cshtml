@@ -6,11 +6,9 @@
 
 <h1>Stylists</h1>
 
-<ul>
   @foreach(Stylist Stylist in Model)
   {
     <li>@Html.ActionLink($"{Stylist.Name}", "details", new { id = Stylist.StylistId })</li>
   }
-</ul>
 
 <p>@Html.ActionLink("+", "create")</p>
