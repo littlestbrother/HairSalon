@@ -9,8 +9,8 @@
 @using (Html.BeginForm())
 {
   @Html.HiddenFor(model => model.StylistId)
-  <label for="Name">New name:</label>
-  <input type="text" id="Name" name="Name" placeholder="New name goes here."required>
+  <label for="Name">Name:</label>
+  <input type="text" id="Name" name="Name" value=@Model.Name placeholder="New name goes here."required>
   <br>
   <input type="submit" value="Save" class="btn btn-primary"/>
 }

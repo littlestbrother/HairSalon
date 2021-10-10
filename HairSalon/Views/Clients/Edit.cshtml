@@ -11,14 +11,14 @@
 {
   @Html.HiddenFor(model => model.ClientId)
 
-  <label for="Name">New name:</label>
-  <input type="text" id="Name" name="Name" placeholder="New name goes here."required>
+  <label for="Name">Name:</label>
+  <input type="text" id="Name" name="Name" value=@Model.Name placeholder="New name goes here."required>
   <br>
 
   @* @Html.LabelFor(model => model.Name)
   @Html.EditorFor(model => model.Name) *@
 
-  <label for=Stylist>New Stylist: </label>
+  <label for=Stylist>Stylist: </label>
   @Html.DropDownList("StylistId", null, new {required = String.Empty});
 <br>
   <input type="submit" value="Save" class="btn btn-primary"/>
