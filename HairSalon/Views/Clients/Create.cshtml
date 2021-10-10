@@ -10,10 +10,11 @@
 {
   <label for=Name>Name: </label>
 
-  @Html.TextBoxFor(model => model.Name)
+  @* @Html.TextBoxFor(model => model.Name) *@
+  <input type="text" id="Name" name="Name" required>
   <br>
   <label for=Stylist>Stylist: </label>
-  @Html.DropDownList("StylistId")
+  @Html.DropDownList("StylistId", null, new {required = String.Empty});
   <br>
   <input type="submit" value="Add new Client" class="btn btn-primary" />
 }
