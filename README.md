@@ -12,7 +12,7 @@
 }
 ```
 
-1. From the uppermost directory of your project run:
+4. From the uppermost directory of your project run:
 
 ```bash
 cd HairSalon && dotnet run
